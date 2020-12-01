@@ -18,7 +18,7 @@ const forecast = (lat, long,  callback) => {
           } else {
                // callback(undefined, response.body.current.weather_descriptions[0] + '. it is currently ' + response.body.current.temperature + ' degrees out. it feels like ' + response.body.current.feelslike + ' degrees out')
 
-               callback(undefined, body.current.weather_descriptions[0] + '. it is currently ' + body.current.temperature + ' degrees out. it feels like ' + body.current.feelslike + ' degrees out')                            // destructuring lect 40 part
+               callback(undefined, body.current.weather_descriptions[0] + '. it is currently ' + body.current.temperature + ' degrees out. it feels like ' + body.current.feelslike + ' degrees out' + '. The visibility of ' + body.location.name + '. is  ' + body.current.visibility)                            // destructuring lect 40 part
           }               
      })
 }
